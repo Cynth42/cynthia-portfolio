@@ -59,7 +59,7 @@ body {
 }
 
 /* ========= Nav ==========*/
-
+/* Udacity's code.  Removed it from media queries min-width and added it to Main to affect screen width less than 500px.*/
 .nav {
   width: 200px;
   margin-left: auto;
@@ -116,9 +116,9 @@ ul {
   margin: 0;
 }
 
-/* ========= Hero  ==========*/
+/* ========= Hero Image ==========*/
 
-.hero {
+.hero-image {
 /* Position image to scale nicely on all screens */
   position: relative;
   max-width: 100%;
@@ -193,7 +193,8 @@ ul {
   display: flex;
 }
 
-/* Create three equal columns that sits next to each other */
+/* Create three equal columns that sits next to each other. Code is From w3school.com. Added more styling to it.
+*/
 .column {
   flex: 33.33%;
   padding: 5px;
