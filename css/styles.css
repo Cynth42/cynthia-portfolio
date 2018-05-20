@@ -273,7 +273,7 @@ ul {
 
 /* ========= Media Queries==========*/
 @media screen and (max-width: 500px) {
-/* Making the project's image responsive */
+/* Making the project's images responsive */
   .column {
     width: 100%;
   }
@@ -290,7 +290,7 @@ ul {
   }
 
   .title-name {
-    color: #1a1a1a;
+    color: #21210D;
     margin: 0;
   }
 
@@ -305,8 +305,8 @@ ul {
     transform: translate(0);
     z-index: 50;
     background: #797987;
-    height: 70px;
-    box-shadow: 0px 5px 15px #798191;
+    height: 55px;
+
   }
 
   .nav-list {
@@ -319,7 +319,7 @@ ul {
   .nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0 32px;
     padding: 0.75em;
   }
@@ -377,7 +377,7 @@ ul {
 
 @media screen and (min-width: 1400px) {
   .container-main {
-    width: 1500px;
+    width: 1400px;
     margin: auto;
  }
 }
