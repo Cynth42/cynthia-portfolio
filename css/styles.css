@@ -59,7 +59,7 @@ body {
 }
 
 /* ========= Nav ==========*/
-/* Udacity's code.  Removed it from media queries min-width and added it to Main to affect screen width less than 500px.*/
+/* Udacity's code.  Removed it from media queries max-width and added it to Main to affect screen width less than 500px.*/
 .nav {
   width: 200px;
   margin-left: auto;
