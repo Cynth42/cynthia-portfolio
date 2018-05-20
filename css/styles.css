@@ -9,13 +9,12 @@ body {
   position: relative;
   height: 100%;
   overflow-x: hidden;
-
 }
 
 /* ========= Header Wrapper ==========*/
 
 .header-container {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -65,7 +64,7 @@ body {
   width: 200px;
   margin-left: auto;
 	margin-right: auto;
-	background-color: #ebebeb;  /*#fff;*/
+	background-color: #ebebeb;  
 	position: absolute;
 	z-index: 1;
 	right: 0;
@@ -75,7 +74,7 @@ body {
   /* Optionally, we animate the drawer.*/
 	transition: transform 0.4s ease;
 }
-	.nav.open {
+.nav.open {
 		transform: translate(0px);
 		-webkit-transform: translate(0px, 0);
 	}
@@ -97,9 +96,7 @@ body {
 	text-transform: uppercase;
 	border-bottom: 1px solid #c5c5c5;
   color: #212121;
-
 }
-
 
 .nav a {
   text-decoration: none;
@@ -122,12 +119,12 @@ ul {
 /* ========= Hero  ==========*/
 
 .hero {
-    /* Position and center the image to scale nicely on all screens */
-    position: relative;
-    max-width: 100%;
+/* Position image to scale nicely on all screens */
+  position: relative;
+  max-width: 100%;
 
-    /* Set a specific height */
-    height: auto;
+/* Set a specific height */
+  height: auto;
 
 }
 
@@ -175,7 +172,6 @@ ul {
   max-width: 100%;
   align-items: center;
   justify-content: center;
-
 }
 
 /* ========= Project ==========*/
@@ -188,74 +184,72 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
 }
 
 .project-image {
-    width: 300px;
-  }
+  width: 300px;
+}
 
 .row {
-    display: flex;
+  display: flex;
 }
 
 /* Create three equal columns that sits next to each other */
 .column {
-    flex: 33.33%;
-    padding: 5px;
-    box-sizing: border-box;
-    text-align: center;
-    color: #212121;
-    text-align: center;
-    font-size: 1em;
-    align-items: center;
-
+  flex: 33.33%;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #212121;
+  text-align: center;
+  font-size: 1em;
+  align-items: center;
 }
 
 /* ========= Contact ==========*/
 
 .contact {
-    padding: 16px 0 ;
-    background-color: #fff;
+  padding: 16px 0 ;
+  background-color: #fff;
 }
 
-.contact-heading{
-    text-align: center;
-    padding: 32px 0;
-    font-size: 1.8em;
+.contact-heading {
+  text-align: center;
+  padding: 32px 0;
+  font-size: 1.8em;
 }
 
 .contact-desc {
-    font-size: 1.2em;
-    text-align: center;
-    width: 70%;
-    margin: 0 auto 64px;
+  font-size: 1.2em;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto 64px;
 }
 
 /* ========= Social Links ==========*/
 
 .links {
-    height: 100px;
-    width: 100%;
-    background-color: #797987;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #797987;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-link{
-    padding: 1em;
-    margin: 0 12px;
-    background-color: #797987;
-    border-radius: 50px;
-    color: #fff;
-    transition: all 0.4s ease;
+  padding: 1em;
+  margin: 0 12px;
+  background-color: #797987;
+  border-radius: 50px;
+  color: #fff;
+  transition: all 0.4s ease;
 }
 
 .social-link:hover {
-    background-color: #fff;
-    color: #c0c0c0;
-    transform: scale(1.0);
+  background-color: #fff;
+  color: #c0c0c0;
+  transform: scale(1.0);
 }
 
 .social-link:active {
@@ -287,7 +281,7 @@ ul {
 
 @media screen and (min-width: 500px) {
   .menu {
-   display: none;
+    display: none;
   }
 
   .title {
@@ -330,26 +324,26 @@ ul {
     padding: 0.75em;
   }
 
-  .nav a:hover {
+.nav a:hover {
     color: #7dc6eb;
     background: #fff;
     text-decoration: underline;
     border-radius: 1px;
   }
 
-  .projects-heading {
-     width: 300px;
-     margin: 16px auto 64px;
+.projects-heading {
+    width: 300px;
+    margin: 16px auto 64px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .about-desc {
-      width: 45%;
+    width: 45%;
   }
 
   .contact-desc {
-      width: 400px;
+    width: 400px;
   }
 }
 
@@ -372,7 +366,7 @@ ul {
      margin: 16px auto 64px;
   }
 
- .projects-container {
+  .projects-container {
      display: flex;
      flex-direction: row;
      justify-content: center;
@@ -381,8 +375,8 @@ ul {
   }
 }
 
- @media screen and (min-width: 1400px) {
-   .container-main {
+@media screen and (min-width: 1400px) {
+  .container-main {
       width: 1500px;
       margin: auto;
  }
