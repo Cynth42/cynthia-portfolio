@@ -93,8 +93,8 @@ body {
   display: list-item;
   padding: 24px;
   text-align: center;
-	text-transform: uppercase;
-	border-bottom: 1px solid #c5c5c5;
+  text-transform: uppercase;
+  border-bottom: 1px solid #c5c5c5;
   color: #212121;
 }
 
@@ -106,7 +106,7 @@ body {
 }
 
 .nav a:hover {
-	color: #212121;
+  color: #212121;
   text-decoration: underline;
 }
 
@@ -125,7 +125,6 @@ ul {
 
 /* Set a specific height */
   height: auto;
-
 }
 
 /* ========= About Me ==========*/

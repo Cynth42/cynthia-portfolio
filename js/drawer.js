@@ -1,7 +1,7 @@
 // open&close hamburger menu
-     const hamburger_menu = document.getElementById('hamburger_menu');
+     const menu = document.getElementById('menu');
      const drawer = document.getElementById('drawer');
 
-     hamburger_menu.addEventListener('click', function() {
+     menu.addEventListener('click', function() {
      drawer.classList.toggle('open');
     });
