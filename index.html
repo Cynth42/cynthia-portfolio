@@ -2,106 +2,254 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="description" content="Cynthia Clinton's Udacity Portfolio">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Cynthia's Portfolio</title>
-	<link rel="stylesheet" href="css/styles.css">
-	<!-- Bootstrap CDN -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="src/css/styles.css">
 	<!-- Font Awesome CDN -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 	<!-- Google Fonts CDN -->
-	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
-	<link rel="icon" href="images/logo-256.png">
+	<link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+	<link rel="icon" href="src/images/logo-256.png">
 </head>
 
 <body>
-	<div id="header-container">
-		<header class="inner-header">
-			<img class="header-logo" src="images/logo-256.png" alt="My logo">
-			<img class="menu" id="menu" src="images/menu-bar.png" alt="Menu Bar">
-			<div class="title">
-			  <h1 class="title-name">Cynthia Clinton</h1>
-			  <h2 class="title-position">Front-End Ninja in Training</h2>
-			</div>
-		</header>
-   <!--Udacity's code.  Made few changes to it-->
-		<nav id="drawer" class="nav">
-			<ul class="nav-list">
-				<li class="nav-item"><a href="#about">About</a></li>
-        <li class="nav-item"><a href="#projects">Projects</a></li>
-				<li class="nav-item"><a href="#contact">Contact</a></li>
-    	</ul>
-    </nav>
+	<div id="header__container">
+		<header id="home" class="inner__header">
+			<img class="header__logo" src="src/images/logo-256.png" alt="My logo">
+			<img class="menu" id="menu" src="src/images/menu-bar.png" alt="Menu Bar">
+				<div class="title">
+					<h1 class="title__name">Cynthia Clinton</h1>
+			  	<h2 class="title__position">Rails Front-End Developer</h2>
+				</div>
+			</header>
 
-		<div class="hero">
-			<img class="hero-image" src="images/skillcrush-computer.jpg" alt="Work Station" width="1400">
-		</div>
+			<nav id="nav" class="nav sticky">
+				<a class="nav__item" tabindex="0" href="#home">Home</a>
+				<a class="nav__item" tabindex="0" href="#aboutme">About Me</a>
+				<a class="nav__item" tabindex="0" href="#projects">Projects</a>
+				<a class="nav__item" tabindex="0"  href="#resume">Resume</a>
+				<a class="nav__item" tabindex="0" href="#contact">Contact</a>
+			</nav>
+
+			<div class="hero">
+				<h1 class="hero__name">Cynthia Clinton</h1>
+				<h2 class="hero__position">Rails Front-End Developer</h2>
+
+				<img class="hero__image" src="src/images/skillcrush-computer.jpg" alt="Work Station" width="1400px">
+
+				<a href="#aboutme">
+					<i class="fas fa-hand-point-down"></i>
+				</a>
+
+				<div id="drawer" class="drawer">
+					<a class="drawer__item" tabindex="0" href="#home">Home</a>
+					<a class="drawer__item" tabindex="0" href="#aboutme">About Me</a>
+					<a class="drawer__item" tabindex="0" href="#projects">Projects</a>
+					<a class="drawer__item" tabindex="0"  href="#resume">Resume</a>
+					<a class="drawer__item" tabindex="0" href="#contact">Contact</a>
+				</div>
+		 	</div>
 	</div>
 
-	<main class="main-container">
-		<section id="about" class="about">
-			<h2 class="about-title">Hello World, I'm Cynthia.</h2>
-				<p class="about-desc">Currently enrolled in Google Udacity Front-End Nano Degree Scholarship program  ~  learning new skills to be a Front-End Ninja!</p>
+	<main class="main__container">
+		<section id="aboutme" class="about__me">
+			<h2 class="about__title">Hello World, I'm Cynthia.</h2>
+				<p5`onloadedmetadata="" class="about__desc">Currently </p>
 		</section>
 
 		<section id="projects" class="projects">
-			<h2 class="projects-heading">Featured Projects</h2>
-			<hr>
+			<h2 class="projects__heading">Most Recent Projects</h2>
 
-			<div class="projects-container">
-				<!--From W3School.com- Flexbox's section.  Made few changes-->
-				<div class="row">
-					<div class="column project">
-						<h3 class="project-title">Weather App</h3>
-							<a href="http://weatheroutfits.herokuapp.com/users/sign_in"
-							target="_blank">
-								<img src="images/animal-trading-card.png" alt="Weather Application" class="project-image">
-	 				 		</a>
-					 			<p class="project-desc">Weather App is used to search for temperature.</p>
+			<div class="projects__container">
+				<div class="column project">
+					<span class="project__title" title="Click title to visit">
+							<a class="project__title-link" href="https://codepen.io/Cynth-44/full/vpvqbZ"
+							target="_blank" rel="noopener">Animal-Trading-Card</a>
+					 </span>
+					 <div class="project__box">
+							<div class="project__box-inner project__box-inner--p1"></div>
+					 </div>
+           <p class="project__desc">
+						 	Animal trading card is about Chihuahuas!
+					 </p>
+			  </div>
+
+			  <div class="project">
+					<span class="project__title" title="Click title to visit">
+						<a class="project__title-link" href="https://codepen.io/Cynth-44/full/QQOazr/" target="_blank" rel="noopener">Pixel-Art-Maker</a>
+					</span>
+					<div class="project__box">
+							<div class="project__box-inner project__box-inner--p2"></div>
 					</div>
-					<div class="column project">
-						<h3 class="project-title">Pixel-Art-Maker</h3>
-							<a href="https://codepen.io/Cynth-44/full/QQOazr/" target="_blank">
-								<img src="images/animal-trading-card.png" alt="Pixel Art Maker" class="project-image">
-							</a>
-								<p class="project-desc">Pixel art maker is used to draw art  on canvas.</p>
+						<p class="project__desc">
+							Pixel canvas used for drawing art with assorted of tools.
+						</p>
+			</div>
+
+		 	<div class="project">
+					<span class="project__title" title="Click title to visit">
+						 <a class="project__title-link" href="https://cynth42.github.io/memory-game/" target="_blank" rel="noopener">Memory-Game</a>
+					</span>
+					<div class="project__box">
+						 <div class="project__box-inner project__box-inner--p3"></div>
 					</div>
-					<div class="column project">
-						<h3 class="project-title">Animal-Trading-Card</h3>
-							<a href="https://codepen.io/Cynth-44/full/vpvqbZ/" target="_blank">
-								<img src="images/animal-trading-card.png" alt="Three Sitting Chihuahuas" class="project-image">
-							</a>
-								<p class="project-desc">Animal trading card is about Chihuahuas!</p>
-					</div>
+					<p class="project__desc">
+						 Memory Game is a matching game where all cards will be matched to its pair. It demonstrates my mastery of HTML, CSS, JavaScript and jQuery. Check it out!
+					</p>
+		  </div>
+
+		  <div class="project">
+				<span class="project__title" title="Click title to visit">
+						 <a class="project__title-link" href="https://github.com/Cynth42/classic-arcade-game" target="_blank" rel="noopener">Classic-Arcade-Game</a>
+				</span>
+				<div class="project__box">
+					 <div class="project__box-inner project__box-inner--p4"></div>
 				</div>
+				<p class="project__desc">
+						Classic arcade game is a project built with HTML, CSS and JavaScript where bugs/enemies with different speeds move across the board, collision detection between the  player and enemies is applied, player moves in left, right, up and down directions on the screen.
+				</p>
 			</div>
-	  </section>
 
-		<section id="contact" class="contact">
-			<h2 class="contact-heading">Let's Connect</h2>
-			<p class="contact-desc">Thank you for viewing my portfolio. If you have any knowledge of job openings, meetups, or would like to learn more about me, please get in touch. You can follow or reach me through the following social media links:</p>
-
-			<div class="links">
-				<a class="social-link" href="https://github.com/Cynth42" target="_blank">
-					<i class="fab fa-github"></i>
-      	</a>
-      	<a class="social-link" href="https://www.linkedin.com/in/cynthia-c/" target="_blank"> <i class="fab fa-linkedin">
-      		</i>
-      	</a>
-      	<a class="social-link" href="https://twitter.com/ClintonC_45" target="_blank">
-        	<i class="fab fa-twitter"></i>
-      	</a>
-				<a class="social-link" href="https://instagram.com/cynth_44" target="_blank">
-      		<i class="fab fa-instagram"></i>
-      	</a>
+			<div class="project">
+				<span class="project__title" title="Click title to visit">
+						 <a class="project__title-link" href="https://github.com/Cynth42/cat-clicker-premium-pro" target="_blank" rel="noopener">Cat-Clicker-Premium-Pro</a>
+				</span>
+				<div class="project__box">
+					 <div class="project__box-inner project__box-inner--p5"></div>
+				</div>
+				 <p class="project__desc">
+					 Cat clicker is a scalable application efficiently using Separation of Concerns MVC methodology in JavaScript.
+				</p>
 			</div>
-	 	</section>
-	</main>
 
-	<footer class="footer">
-  	<p class="coder">Coded by Cynthia C. &#169; 2018</p>
-	</footer>
+			<div class="project">
+					<span class="project__title" title="Click title to visit">
+						 <a class="project__title-link" href="https://github.com/Cynth42/feed-reader-testing" target="_blank" rel="noopener">Feed-Reader-Testing</a>
+					</span>
+					<div class="project__box">
+					 <div class="project__box-inner project__box-inner--p6"></div>
+					</div>
+					<p class="project__desc">
+						This project consists of test suites built using the Jasmine framework to test against a RSS Feed app.
+					</p>
+			</div>
+
+			<div class="project">
+					<span class="project__title" title="Click title to visit">
+						 <a class="project__title-link" href="https://github.com/Cynth42/mws-restaurant-stage-1" target="_blank" rel="noopener">Restaurant-Reviews-App</a>
+				 </span>
+				 <div class="project__box">
+					 <div class="project__box-inner project__box-inner--p7"></div>
+				 </div>
+				 <p class="project__desc">
+					 It's about the offline first approach which used the Service Worker API
+				 </p>
+			</div>
+
+			<div class="project" title="Click title to visit">
+				<span class="project__title">
+						 <a class="project__title-link" href="https://github.com/Cynth42/fend-reactnd-myreads-project" target="_blank" rel="noopener">My-Reads-App</a>
+				</span>
+				<div class="project__box">
+					 <div class="project__box-inner project__box-inner--p8"></div>
+				</div>
+				<p class="project__desc">
+					A web app developed using React JS & React Router that allows users to search, select & categorize books based on if they've read, currently reading or want to read.
+				</p>
+			</div>
+
+			<div class="project" title="Click title to visit">
+				<span class="project__title">
+						 <a class="project__title-link" href="https://github.com/Cynth42/udacity-fend-neighborhood-map" target="_blank" rel="noopener">My-Neighborhood-Map-App</a>
+				</span>
+				<div class="project__box">
+					 <div class="project__box-inner project__box-inner--p9"></div>
+				</div>
+				<p class="project__desc">
+					 A project implementing Google maps API with React & a third party API FourSquare to dynamically generate & display a list of locations & details in a specific area.
+				</p>
+			</div>
+
+			<div class="project" title="Click title to visit">
+				<span class="project__title">
+						 <a class="project__title-link" href="http://weatheroutfits.herokuapp.com/users/sign_in" target="_blank" rel="noopener">Recipe-Box-App</a>
+				</span>
+				<div class="project__box">
+					 <div class="project__box-inner project__box-inner--p10"></div>
+				</div>
+				<p class="project__desc">
+					 Built recipes slots where each recipe has multiple ingredients and multiple steps, image uploading. Used HAML instead of ERB in views.
+				</p>
+			</div>
+
+			<div class="project" title="Click title to visit">
+				<span class="project__title">
+					<a class="project__title-link" href="http://weatheroutfits.herokuapp.com/users/sign_in" target="_blank" rel="noopener">Weather-Application</a>
+				</span>
+				<div class="project__box">
+					 <div class="project__box-inner project__box-inner--p11"></div>
+				</div>
+				<p class="project__desc">
+					 Weather App is used to search for temperature of the 51 states.
+				</p>
+		 </div>
+
+		 <div class="project" title="Click title to visit">
+				 <span class="project__title">
+						 <a class="project__title-link" href="http://weatheroutfits.herokuapp.com/users/sign_in" target="_blank" rel="noopener">Rails-Pinning-App</a>
+				</span>
+				<div class="project__box">
+					 <div class="project__box-inner project__box-inner--p12"></div>
+				</div>
+				<p class="project__desc">
+					A rails pinning app that allow users to.
+				</p>
+		 </div>
+	 </div>
+	</section>
+
+	<section id="resume" class="resume">
+		<h2 class="resume__heading">My Resume</h2>
+		<p class="resume__desc">Rails is a web application framework running on the Ruby programming language. If you have no prior experience with Ruby, you will find a very steep learning curve diving straight into Rails. There are several curated lists of online resources for learning Ruby:
+
+    Official Ruby Programming Language website
+		List of Free Programming Books
+		Be aware that some resources, while still excellent, cover versions of Ruby as old as 1.6, and commonly 1.8, and will not include some syntax that you will see in day-to-day development with Rails.
+
+		2 What is Rails?
+		Rails is a web application development framework written in the Ruby programming language. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started. It allows you to write less code while accomplishing more than many other languages and frameworks. Experienced Rails developers also report that it makes web application development more fun.
+
+		Rails is opinionated software. It makes the assumption that there is a "best" way to do things, and it's designed to encourage that way - and in some cases to discourage alternatives. If you learn "The Rails Way" you'll probably discover a tremendous increase in productivity. If you persist in bringing old habits from other languages to your Rails development, and trying to use patterns you learned elsewhere, you may have a less happy experience.
+	</p>
+	</section>
+
+	<section id="contact" class="contact">
+		<h2 class="contact__heading">Contact Information</h2>
+		<p class="contact__desc">Thank you for viewing my portfolio. If you have any knowledge of job openings, meetups, or would like to learn more about me, please get in touch. You can follow or reach me through the following social media links:</p>
+
+		<div class="links">
+			<a class="social__link" href="https://github.com/Cynth42" target="_blank" rel="noopener"><i class="fab fa-github"></i>
+      </a>
+      <a class="social__link" href="https://www.linkedin.com/in/cynthia-c/" target="_blank" rel="noopener"> <i class="fab fa-linkedin"></i>
+      </a>
+      <a class="social__link" href="https://twitter.com/ClintonC_45" target="_blank" rel="noopener"><i class="fab fa-twitter"></i>
+      </a>
+			<a class="social__link" href="https://instagram.com/cynth_44" target="_blank" rel="noopener"><i class="fab fa-instagram"></i>
+      </a>
+		</div>
+	 </section>
+ </main>
+
+ <div class="scroll__top">
+		<i class="fas fa-arrow-alt-circle-up" title="Scroll to the Top" tabindex="0"></i>
+ </div>
+
+ <footer class="footer">
+  	<p class="coder">Copyright &nbsp; &#169; &nbsp; 2018 &nbsp; <a class="link" href="https://poshmark.com/closet/cynth43" target="_blank">Cynthia C.</a> &nbsp; All rights reserved.</p>
+</footer>
 </body>
-	<script src="js/drawer.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="src/js/drawer.js"></script>
 </html>
